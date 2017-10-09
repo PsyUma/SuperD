@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  resources :super_d_users
   resources :users
+
   get 'dashboard/dashboard'
 
   get 'cards/cards'
-
-  get 'charts/charts'
 
   get 'tables/tables'
 
@@ -27,7 +27,6 @@ Rails.application.routes.draw do
   root 'home#home'
   get 'dashboard' => 'dashboard#dashboard'
   get 'cards' => 'cards#cards'
-  get 'charts' => 'charts#charts'
   get 'tables' => 'tables#tables'
   get 'navbar' => 'navbar#navbar'
   get 'blog' => 'blog#blog'
