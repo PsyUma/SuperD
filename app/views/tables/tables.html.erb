@@ -241,34 +241,35 @@
           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
             <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Category</th>
+              <th>Company</th>
+              <th>Issubscribedforemailupdates</th>
+              <th>Issubscribedfornewsletter</th>
+              <th colspan="3"></th>
             </tr>
             </thead>
-            <tfoot>
-            <tr>
-              <th>Name</th>
-              <th>Position</th>
-              <th>Office</th>
-              <th>Age</th>
-              <th>Start date</th>
-              <th>Salary</th>
-            </tr>
-            </tfoot>
             <tbody>
-            <% @super_d_users.each do |super_d_user| %>
+            <tbody>
+            <% @susers.each do |suser| %>
                 <tr>
-                  <td><%= super_d_user.first %></td>
-                  <td><%= super_d_user.last %></td>
-                  <td><%= link_to 'Show', super_d_user %></td>
-                  <td><%= link_to 'Edit', edit_super_d_user_path(super_d_user) %></td>
-                  <td><%= link_to 'Destroy', super_d_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                  <td><%= suser.firstname %></td>
+                  <td><%= suser.lastname %></td>
+                  <td><%= suser.email %></td>
+                  <td><%= suser.address %></td>
+                  <td><%= suser.category %></td>
+                  <td><%= suser.company %></td>
+                  <td><%= suser.isSubscribedForEmailUpdates %></td>
+                  <td><%= suser.isSubscribedForNewsletter %></td>
+                  <td><%= link_to 'Show', suser %></td>
+                  <td><%= link_to 'Edit', edit_suser_path(suser) %></td>
+                  <td><%= link_to 'Destroy', suser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
                 </tr>
             <% end %>
+            </tbody>
             </tbody>
           </table>
         </div>

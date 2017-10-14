@@ -1,2 +1,0 @@
-class SuperDUser < ApplicationRecord
-end

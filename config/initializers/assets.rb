@@ -11,5 +11,5 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-Rails.application.config.assets.precompile += %w( sb-admin-datatables.min.js jquery.dataTables.js dataTables.bootstrap4.js sb-admin.min.js Chart.min.js sb-admin-charts.min.js dataTables.bootstrap4.css
+Rails.application.config.assets.precompile += %w( filterdropdowns.css sb-admin-datatables.min.js jquery.dataTables.js dataTables.bootstrap4.js sb-admin.min.js Chart.min.js sb-admin-charts.min.js dataTables.bootstrap4.css
 sb-admin.css jquery.easing.min.js font-awesome.min.css jquery.min.js popper.min.js bootstrap.min.js bootstrap.min.css business-casual.css )

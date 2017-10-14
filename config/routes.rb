@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :super_d_users
   resources :users
 
   get 'dashboard/dashboard'
@@ -23,6 +22,9 @@ Rails.application.routes.draw do
   get 'contact/contact'
 
   get 'about/about'
+
+post 'users/filter' => 'users#filter'
+  post '/sendEmail' => 'users#sendEmail'
 
   root 'home#home'
   get 'dashboard' => 'dashboard#dashboard'

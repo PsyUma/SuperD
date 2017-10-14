@@ -1,0 +1,16 @@
+div.dropdown_container {
+    max-width:10px;
+}
+
+select.my_dropdown {
+    width:auto;
+}
+
+/*IE FIX */
+select#my_dropdown {
+    width:100%;
+}
+
+select:focus#my_dropdown {
+    width:auto\9;
+}
